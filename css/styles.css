@@ -1,0 +1,50 @@
+/*
+Author - James Byrne
+
+Submission for Rich Web Development Assignment 1
+*/
+
+/* "We need a margin around the whole body" says google chrome */
+.fixed-body {
+  margin: inherit;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(file:///Users/james/development/rich-web-assignment-1/images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+.hero-content-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-content {
+  display: table;
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.hero-heading-text {
+  color: #ffffff;
+  font-size: 52px;
+  line-height: 52px;
+}
+
+
+.nav-menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
