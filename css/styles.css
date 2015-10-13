@@ -4,9 +4,51 @@ Author - James Byrne
 Submission for Rich Web Development Assignment 1
 */
 
-/* "We need a margin around the whole body" says google chrome */
-.fixed-body {
-  margin: inherit;
+/* "We need a margin around the whole body" says google chrome
+ * "No we dont" said James
+ */
+body {
+  margin: 0;
+}
+
+/* Grouped definitions */
+
+.hero-content-container, .intro-content-container, .work-content-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-content, .intro-content, .work-content {
+  display: table;
+  position: relative;
+  height: inherit;
+  max-width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.heading, .intro-heading, .work-heading {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #000000;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+section, article, header p {
+  color: #727272;
+}
+
+.intro, .work {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #FFFFFF;
 }
 
 /* CSS for the hero section  */
@@ -16,33 +58,19 @@ Submission for Rich Web Development Assignment 1
   background-repeat: no-repeat;
   background-clip: content-box;
 }
-
-.hero-content-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.hero-content {
-  display: table;
-  position: relative;
-  height: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .hero-content span {
   display: table-cell;
   vertical-align: middle;
 }
-.hero-heading-text {
+
+.hero-heading{
   color: #ffffff;
   font-size: 52px;
   line-height: 52px;
 }
 
 /* TODO : Is this needed? */
+/*CSS for the navigation menu*/
 .nav-menu {
   width: 80%;
   margin-left: auto;
@@ -52,24 +80,67 @@ Submission for Rich Web Development Assignment 1
 
 /* CSS for the Intro section */
 .intro {
-  width: 100%;
-  height: 200px;
+  background-color: #FAFAFA;
 }
-.intro-content-container{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+
 .intro-content {
-  display: table;
-  position: relative;
-  height: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  width: 65%;
 }
+
 .intro-content span {
-  text-align: center;
   display: table-cell;
   vertical-align: middle;
+}
+
+
+/*CSS for work section*/
+.work {
+  height: 600px;
+}
+
+
+
+
+
+/*Column definitions */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+.grid {
+  width: 100%;
+  overflow: hidden;
+}
+.grid-pad {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.no-top {
+  padding-top: 0;
+}
+
+.col-1-1, .col-1-2 {
+  float: left;
+  min-height: 1px;
+  padding-right: 30px;
+}
+
+.col-1-1 {
+  width: 100%;
+}
+.col-1-2 {
+  width: 50%;
+  float: left;
 }
