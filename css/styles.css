@@ -9,6 +9,7 @@ Submission for Rich Web Development Assignment 1
   margin: inherit;
 }
 
+/* CSS for the hero section  */
 .hero {
   height: 100vh;
   background-image: url(file:///Users/james/development/rich-web-assignment-1/images/hero-image.jpg);
@@ -41,10 +42,34 @@ Submission for Rich Web Development Assignment 1
   line-height: 52px;
 }
 
-
+/* TODO : Is this needed? */
 .nav-menu {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+}
+
+/* CSS for the Intro section */
+.intro {
+  width: 100%;
+  height: 200px;
+}
+.intro-content-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.intro-content {
+  display: table;
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro-content span {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
