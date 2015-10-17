@@ -35,7 +35,7 @@ body {
 .col-1-1, .col-1-2 {
   float: left;
   min-height: 1px;
-  padding-right: 30px;
+  /*padding-right: 30px;*/
 }
 
 .col-1-1 {
@@ -46,12 +46,25 @@ body {
   float: left;
 }
 
+/* Non-specifics */
+/* Clips the image to a cut out shape */
+/*
+.cut-conrners{
+  width: 150px;
+  -webkit-clip-path: polygon(
+    80% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%, 0 0%
+
+  );
+}
+*/
+
 /* "We need a margin around the whole body" says google chrome
  * "No we dont" said James
  */
 body {
   margin: 0;
 }
+
 
 /* Grouped definitions */
 
@@ -70,9 +83,8 @@ body {
   padding-right: 15%;
 }
 
-
 .heading, .intro-heading, .work-heading {
-  display: table-cell;
+
   vertical-align: middle;
   font-size: 15px;
   font-weight: bold;
@@ -137,15 +149,13 @@ section, article, header p {
 .work {
   height: 600px;
 }
-/* Clips the image to a cut out shape */
-.cut-conrners{
-  width: 150px;
-  -webkit-clip-path: polygon(
-    80% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%, 0 0%
 
-  );
-}
 .work-image {
+  margin: 15px auto 15px auto;
+}
+
+.work-content {
+  max-width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
