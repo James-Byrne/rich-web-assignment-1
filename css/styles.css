@@ -63,6 +63,7 @@ body {
  */
 body {
   margin: 0;
+  background-color: #fafafa
 }
 
 
@@ -74,8 +75,8 @@ body {
   width: 100%;
 }
 
-.hero-content, .intro-content, .work-content, .skills-content {
-  display: table;
+.hero-content, .intro-content, .work-content, .skill-wrapper {
+  display: block;
   position: relative;
   height: inherit;
   text-align: center;
@@ -111,6 +112,10 @@ section, article, header p {
   background-repeat: no-repeat;
   background-clip: content-box;
 }
+.hero-content {
+  display: table;
+}
+
 .hero-content span {
   display: table-cell;
   vertical-align: middle;
@@ -165,21 +170,43 @@ section, article, header p {
   max-width: 100%;
 }
 
-/* Skills section */
+/* Skills section
+ * Mind the distinction between "skills-" and "skill" especially for the headings
+*/
+
 /*see the list here https://www.pinterest.com/pin/374713631473427589/*/
 
-.skills-icon {
+.skill-icon {
   float: left;
+  background: #fafafa;
 }
-.skills-icon > img {
+
+/*
+ * Curving the corners of the javascript icon 
+*/
+.skill-icon > img {
+  border-radius: 10px;
   max-height: 75px;
   max-width: 75px;
 }
 
+.skill-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .skill-heading {
-  border-bottom: black;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 95px;
+  border-bottom: 2px solid #727272;
 }
 
 .skill-content {
-
+  margin-left: 95px;
+  text-align: left;
+  height: 40px;
+  margin-bottom: 25px;
 }
