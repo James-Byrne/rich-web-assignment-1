@@ -84,7 +84,6 @@ body {
 }
 
 .heading, .intro-heading, .work-heading {
-
   vertical-align: middle;
   font-size: 15px;
   font-weight: bold;
@@ -146,10 +145,6 @@ section, article, header p {
 
 
 /*CSS for work section*/
-.work {
-  height: 600px;
-}
-
 .work-image {
   margin: 15px auto 15px auto;
 }
