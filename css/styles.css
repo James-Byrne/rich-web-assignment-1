@@ -74,7 +74,7 @@ body {
   width: 100%;
 }
 
-.hero-content, .intro-content, .work-content {
+.hero-content, .intro-content, .work-content, .skills-content {
   display: table;
   position: relative;
   height: inherit;
@@ -83,9 +83,9 @@ body {
   padding-right: 15%;
 }
 
-.heading, .intro-heading, .work-heading {
+.heading, .intro-heading, .work-heading, .skills-heading {
   vertical-align: middle;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #000000;
@@ -145,6 +145,11 @@ section, article, header p {
 
 
 /*CSS for work section*/
+/*.work {
+  background-image: url(file:///Users/james/development/rich-web-assignment-1/images/background-small.png);
+  background-size: cover;
+}*/
+
 .work-image {
   margin: 15px auto 15px auto;
 }
@@ -153,4 +158,28 @@ section, article, header p {
   max-width: 70%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.col-1-2 > .work-content {
+  max-width: 100%;
+}
+
+/* Skills section */
+/*see the list here https://www.pinterest.com/pin/374713631473427589/*/
+
+.skills-icon {
+  float: left;
+}
+.skills-icon > img {
+  max-height: 75px;
+  max-width: 75px;
+}
+
+.skill-heading {
+  border-bottom: black;
+}
+
+.skill-content {
+
 }
