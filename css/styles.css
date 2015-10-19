@@ -45,6 +45,14 @@ body {
   width: 50%;
   float: left;
 }
+.col-1-3 {
+  width: 33%;
+  float: left;
+}
+.col-2-3 {
+  width: 66%;
+  float: left;
+}
 
 /* Non-specifics */
 /* Clips the image to a cut out shape */
@@ -75,7 +83,7 @@ body {
   width: 100%;
 }
 
-.hero-content, .intro-content, .work-content, .skill-wrapper {
+.hero-content, .intro-content, .work-content, .education-wrapper, .skill-wrapper {
   display: block;
   position: relative;
   height: inherit;
@@ -84,7 +92,7 @@ body {
   padding-right: 15%;
 }
 
-.heading, .intro-heading, .work-heading, .skills-heading {
+.heading, .intro-heading, .work-heading, .skills-heading, .education-heading {
   vertical-align: middle;
   font-size: 16px;
   font-weight: bold;
@@ -182,7 +190,7 @@ section, article, header p {
 }
 
 /*
- * Curving the corners of the javascript icon 
+ * Curving the corners of the javascript icon
 */
 .skill-icon > img {
   border-radius: 10px;
@@ -209,4 +217,32 @@ section, article, header p {
   text-align: left;
   height: 40px;
   margin-bottom: 25px;
+}
+
+
+/* CSS for education section  */
+
+.education-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.education-icon {
+  float: left;
+}
+
+.education-icon > img{
+  border-radius: 10px;
+  max-height: 250px;
+  max-width: 250px;
+  vertical-align: middle;
+}
+
+.education-heading {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #727272;
+}
+
+.education-content {
+  max-height: 250px;
 }
