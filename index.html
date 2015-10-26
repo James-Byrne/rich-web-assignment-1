@@ -18,102 +18,87 @@ TODO : Add the following sections
 <html>
   <head>
     <!-- Add CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/newStyles.css" rel="stylesheet" type="text/css">
 
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body class="fixed-body">
+  <body>
 
-<!-- Hero section -->
-      <section id="hero-header" class="hero">
-        <div class="hero-content-container">
-          <div class="hero-content col-1-1">
-            <span>
-              <h2 class="hero-heading"> Lorem Ipsum Dolor Sit</h2>
-            </span>
-          </div>
-        </div>
+    <!-- hero section -->
+    <div class="grid">
+      <section class="hero hero-content-container" id="hero-header">
+        <span>
+          <h2 class="center-content">
+            Assignment 1</h2>
+        </span>
       </section>
+    </div>
 
-<!-- intro section -->
-    <section id="intro" class="intro grid">
-      <header class="col-1-1 heading">
-        <p>
-          <!-- TODO : Add an animation and a line/dots/arrow under heading  -->
-          ABOUT HIMSELF
-        </p>
-      </header>
-      <article class="col-1-1 intro-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </article>
+    <!-- TODO : Add an animation here  -->
+    <!-- intro section -->
+    <section class="grid grid-pad" id="intro">
+      <div class="col-6-6">
+        <header class="center-content heading">
+          INTRODUCTION
+        </header>
+        <article class="center-content item-pad">
+          James Byrne is a hardworking, dedicated and self-driven developer currently in his final year of a BSc Honours in Computer Science.
+        </article>
+      </div>
     </section>
 
-    <!-- Work experience  -->
-    <section id="work" class="work grid">
-      <section id="first-job" class="col-1-1">
-        <header class=" work-heading">
-          <p>
-            WORK EXPERIENCE
-          </p>
-        </header>
-        <div class="cut-conrners work-image">
-          <img src="file:///Users/james/development/rich-web-assignment-1/images/blue.jpg" alt="Littleboat.ie" width="150" height="150" />
-        </div>
-        <header class="work-heading ">
-            LEAD DESIGNER & DEVELOPER
-        </header>
-        <article class="work-content">
-          <p>
-            Littleboat.ie is an Irish web design and development business based in the Dublin/Leinster area. We specialize in providing high quality websites with a focus on performance and modern, responsive design.
-          </p>
-        </article>
-      </section>
+    <!-- Work Experience  -->
+    <!-- TODO : Can everything go into the article tag in the core of this? -->
+    <section class="grid grid-pad blue-background shadow" id="work">
 
-      <section id="second-job" class="col-1-2">
-        <div class="cut-conrners work-image">
-          <img src="file:///Users/james/development/rich-web-assignment-1/images/blue.jpg" alt="Littleboat.ie" width="150" height="150" />
-        </div>
-        <header class="work-heading ">
-            LEAD DESIGNER & DEVELOPER
+      <div class="col-6-6 heading" id="first-job">
+        <header class="center-content">
+          WORK EXPERIENCE
         </header>
-        <article class="work-content">
-          <p>
-            Littleboat.ie is an Irish web design and development business based in the Dublin/Leinster area. We specialize in providing high quality websites with a focus on performance and modern, responsive design.
-          </p>
-        </article>
-      </section>
+      </div>
 
-      <section id="third-job" class="col-1-2">
-        <div class="cut-conrners work-image">
-          <img src="file:///Users/james/development/rich-web-assignment-1/images/blue.jpg" alt="Littleboat.ie" width="150" height="150" />
+      <article class="col-2-6">
+        <div class="center-content content">
+          <img alt="Littleboat.ie" height="150" src="file:///Users/james/development/rich-web-assignment-1/images/black.jpg" width="150"/>
+          <p>CloneIT</p>
+          <p>Computer repair</p>
         </div>
-        <header class="work-heading ">
-            LEAD DESIGNER & DEVELOPER
-        </header>
-        <article class="work-content">
-          <p>
-            Littleboat.ie is an Irish web design and development business based in the Dublin/Leinster area. We specialize in providing high quality websites with a focus on performance and modern, responsive design.
-          </p>
-        </article>
-      </section>
+      </article>
+
+      <article class="col-2-6">
+        <div class="content center-content">
+          <img alt="Littleboat.ie" height="150" src="file:///Users/james/development/rich-web-assignment-1/images/blue.jpg" width="150"/>
+          <p>Littleboat.ie</p>
+          <p>Lead Developer</p>
+        </div>
+      </article>
+
+      <article class="col-2-6">
+        <div class="content center-content">
+          <img alt="Littleboat.ie" height="150" src="file:///Users/james/development/rich-web-assignment-1/images/gray.jpg" width="150"/>
+          <p>Freelance</p>
+          <p>Web design & development</p>
+        </div>
+      </article>
+
     </section>
 
     <!-- List of skills -->
-    <section id="skills-list" >
+    <section class="grid grid-pad" id="skills-list">
       <!-- Heading  -->
-      <header class="col-1-1 heading">
+      <header class="center-content heading">
         <p>
-          MY SKILLS
+          SKILLS
         </p>
       </header>
 
       <!-- Skill 1 -->
-      <section class="col-1-2 skill-wrapper">
+      <section class="col-3-6 item-pad">
         <div class="skill-icon">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/angular-js.png">
         </div>
-        <header class="skill-heading">
+        <header class="skill-heading center-content">
           ANGULAR JS
         </header>
         <div class="skill-content">
@@ -122,11 +107,11 @@ TODO : Add the following sections
       </section>
 
       <!-- Skill 2 -->
-      <section class="col-1-2 skill-wrapper">
+      <section class="col-3-6 item-pad">
         <div class="skill-icon">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/sass.png">
         </div>
-        <header class="skill-heading">
+        <header class="skill-heading center-content">
           SASS
         </header>
         <div class="skill-content">
@@ -135,7 +120,7 @@ TODO : Add the following sections
       </section>
 
       <!-- Skill 3 -->
-      <section class="col-1-2 skill-wrapper">
+      <section class="col-3-6  item-pad">
         <div class="skill-icon">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/ionic-logo.png">
         </div>
@@ -148,7 +133,7 @@ TODO : Add the following sections
       </section>
 
       <!-- Skill 4 -->
-      <section class="col-1-2 skill-wrapper">
+      <section class="col-3-6  item-pad">
         <div class="skill-icon">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/nodejs-logo.png">
         </div>
@@ -161,7 +146,7 @@ TODO : Add the following sections
       </section>
 
       <!-- Skill 5 -->
-      <section class="col-1-2 skill-wrapper">
+      <section class="col-3-6 item-pad">
         <div class="skill-icon">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/JavaScript-logo.png">
         </div>
@@ -174,7 +159,7 @@ TODO : Add the following sections
       </section>
 
       <!-- Skill 6 -->
-      <section class="col-1-2 skill-wrapper">
+      <section class="col-3-6 item-pad">
         <div class="skill-icon">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/HTML5_logo.png">
         </div>
@@ -186,28 +171,24 @@ TODO : Add the following sections
         </div>
       </section>
 
-
     </section>
 
     <!-- Education -->
-    <section id="education">
-
-      <!-- Education header  -->
-      <header class="col-1-1 heading">
+    <section class="grid grid-pad blue-background shadow" id="education">
+      <header class="col-6-6 heading center-content">
         <p>
-          MY EDUCATION
+          EDUCATION
         </p>
       </header>
-
-      <!-- Education in DIT  -->
-      <section class="col-1-1 education-wrapper">
-        <div class="education-icon col-1-3">
+      <section class="col-6-6 item-pad">
+        <div class="education-icon col-2-6">
           <img src="file:///Users/james/development/rich-web-assignment-1/images/dit-logo.png">
         </div>
-        <article class="education-content col-2-3">
+        <article class="col-4-6">
           <header class="education-heading">
             <p>
-              DUBLIN INSTITUTE OF TECHNOLOGY <br>
+              DUBLIN INSTITUTE OF TECHNOLOGY
+              <br>
               BSC IN COMPUTER SCIENCE
             </p>
           </header>
@@ -222,49 +203,85 @@ TODO : Add the following sections
     </section>
     <!-- End education section -->
 
-
     <!-- Personal Interests -->
     <!-- four circles with an icon for each interest like on the main blog design -->
-    <section id="personal-interests">
+    <section class="grid grid-pad" id="personal-interests">
 
-      <div class="personal-icons-container col-1-1">
+      <header class=" col-6-6 heading center-content item-pad">
+        MY SPARE TIME?
+      </header>
 
-        <div class="col-1-4">
-          <div class="personal-icon">
-            <img src="file:///Users/james/development/rich-web-assignment-1/images/JavaScript-logo.png">
-          </div>
+      <div class="skill-icon col-2-6 center-content">
+        <div class="card skill-icon shadow item-pad">
+          <img src="file:///Users/james/development/rich-web-assignment-1/images/archery.png">
+          <p class="card-heading">
+            Archery
+          </p>
+          <p>
+            Competiting around and for ireland
+          </p>
         </div>
+      </div>
 
-        <div class="col-1-4">
-          <div class="personal-icon">
-            <img src="file:///Users/james/development/rich-web-assignment-1/images/JavaScript-logo.png">
-          </div>
+      <div class="skill-icon col-2-6  center-content">
+        <div class="card skill-icon shadow item-pad">
+          <img src="file:///Users/james/development/rich-web-assignment-1/images/App-Terminal-icon.png">
+          <p class="card-heading">
+            Web Development
+          </p>
+          <p>
+            A mix of freelance work and general interest
+          </p>
         </div>
+      </div>
 
-        <div class="col-1-4">
-          <div class="personal-icon">
-            <img src="file:///Users/james/development/rich-web-assignment-1/images/JavaScript-logo.png">
-          </div>
+      <div class="col-2-6  center-content">
+        <div class="card skill-icon shadow item-pad">
+          <img src="file:///Users/james/development/rich-web-assignment-1/images/ionic-logo.png">
+          <p class="card-heading">
+            Mobile Apps
+          </p>
+          <p>
+            Building mobile apps with web technologies such as ionic and angularjs
+          </p>
         </div>
+      </div>
 
-        <div class="col-1-4">
-          <div class="personal-icon">
-            <img src="file:///Users/james/development/rich-web-assignment-1/images/JavaScript-logo.png">
-          </div>
+    </section>
+
+    <!-- Honours and Rewards  -->
+    <section class="grid grid-pad item-pad" id="honours-rewards">
+
+      <header class=" col-6-6 heading center-content item-pad">
+        ACHIEVEMENTS
+      </header>
+
+      <div class="col-6-6 center-content">
+        <div class="skill-icon col-6-6 top shadow content item-pad">
+          <img src="file:///Users/james/development/rich-web-assignment-1/images/archery.png">
+          <p class="card-heading">
+            Archery
+          </p>
+          <p>
+            Elite Scholarship - DIT Athlete Support Programme
+          </p>
+          <p>
+            1st Place - All Ireland Field Championships
+          </p>
+          <p>
+            2nd Place - NIAS/IAAA Championships
+          </p>
+          <p>
+            2nd Place - Junior Euronations Team event
+          </p>
         </div>
-
       </div>
 
 
     </section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- Honours and Rewards  -->
-    <section id="honours-rewards">
 
-    </section>
-
-    <section id="footer">
-
+    <section id="footer" class="grid grid-pad col-6-6 footer center-content">
+      Designed & Developed by James Byrne
     </section>
 
   </body>
