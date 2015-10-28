@@ -72,9 +72,20 @@ h3{
 h4 {
   margin: 0 auto;
 }
+
+
+@media only screen and (max-width: 550px) {
+  .col {
+    margin: 1% 0 1% 0;
+  }
+  .col-6-6, .col-5-6, .col-4-6, .col-3-6, .col-2-6, .col-1-6 {
+    width: 100%;
+  }
+}
 /*
   Max-device-width rather than max-width so the application will be responsive on newer higher resolution phones such as the iPhone 6s
 */
+
 @media only screen and (max-device-width: 780px) {
   .col {
     margin: 1% 0 1% 0;
