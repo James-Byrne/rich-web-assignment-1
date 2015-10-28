@@ -3,8 +3,7 @@
  * Submission for Rich Web Development Assignment 1
  * New stylesheet for the index page
  *
- * structure
- * grid -> grid-pad & col-x-6 -> item-pad -> content
+ * You can find the git repo here : https://github.com/James-Byrne/rich-web-assignment-1 
 */
 
 
@@ -73,8 +72,8 @@ h4 {
   margin: 0 auto;
 }
 
-
-@media only screen and (max-width: 550px) {
+/*Anything under 800 messes with the skills section */
+@media only screen and (max-width: 800px) {
   .col {
     margin: 1% 0 1% 0;
   }
