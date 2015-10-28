@@ -10,11 +10,13 @@
 
 /* Rules for the grid that the columns sit in  */
 
+/* Setting all of the elements to have the border-box property*/
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*Adjust properties of all columns */
 [class*='col-'] {
   float: left;
   min-height: 1px;
@@ -52,17 +54,7 @@
 .col-1-6 {
   width: 16.667%;
 }
-@media only screen and (max-width: 990px) {
-  .col {
-    margin: 1% 0 1% 0;
-  }
-  .col-6-6, .col-5-6, .col-4-6, .col-3-6, .col-2-6, .col-1-6 {
-    width: 100%;
-  }
-}
-
-/* Defining CSS for elements */
-
+/*Adjust properties of standard elements */
 body {
   margin: 0;
   background-color: #fafafa;
@@ -74,8 +66,28 @@ img {
 section {
   margin-bottom: 30px;
 }
+h3{
+  margin: 0 auto;
+}
+h4 {
+  margin: 0 auto;
+}
+/*
+  Max-device-width rather than max-width so the application will be responsive on newer higher resolution phones such as the iPhone 6s
+*/
+@media only screen and (max-device-width: 780px) {
+  .col {
+    margin: 1% 0 1% 0;
+  }
+  .col-6-6, .col-5-6, .col-4-6, .col-3-6, .col-2-6, .col-1-6 {
+    width: 100%;
+  }
+  body {
+    font-size: xx-large;
+  }
+}
 
-/* Custom classes */
+/*Reusable CSS elements */
 
 .center-content {
   vertical-align: middle;
@@ -93,6 +105,24 @@ section {
 .content p {
   font-weight: bolder;
 }
+.shadow {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+.blue-background {
+  background-color: #0066B7;
+  color: #fafafa;
+}
+.card {
+  color: #fafafa;
+  padding-top: 20px;
+  min-height: 250px;
+  width: 100%;
+}
+.card-heading {
+  font-weight: bold;
+}
 
 /* CSS for the hero section  */
 
@@ -107,39 +137,16 @@ section {
 .hero-content-container {
   display: table;
 }
-.hero-content-container span {
+.hero-content-container h3 {
   display: table-cell;
   vertical-align: middle;
   color: #ffffff;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 52px !important;
+  line-height: 52px;
 }
-.shadow {
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-}
-/*
-.clipped-background {
-  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
-}
-.clipped-background-reversed {
-  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
-}
-.clipped-background-flat-bottom {
-  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
-}*/
-.blue-background {
-  background-color: #01579B;
-  color: #fafafa;
-}
-.dark-background {
-  background-color: #3c474b;
-  color: #fafafa;
-}
+
+/*CSS for the skills section */
+
 .skill-icon {
   float: left;
 }
@@ -164,14 +171,16 @@ section {
   margin-bottom: 25px;
 }
 
+/*CSS for the education section */
 .education-icon {
   float: left;
+  width: 33%;
+  height: 33%;
 }
-.education-icon img{
-  max-width: 250px;
-  max-height: 250px;
+.education-icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
-
 .education-heading {
   font-weight: bold;
   margin-top: 25px;
@@ -180,25 +189,18 @@ section {
   text-align: left;
   border-bottom: 2px solid white;
 }
+.education-content {
+  margin-left: auto;
+}
 
+/*CSS for the honours-rewards*/
 #honours-rewards {
   margin-bottom: 0px;
 }
 
-.card {
-  color: #fafafa;
-  padding-top: 20px;
-  background-color: #01579B;
-  min-height: 250px;
-  width: 100%;
-}
-
-.card-heading {
-  font-weight: bold;
-}
-
+/*CSS for the footer */
 .footer {
-  margin-bottom: 0 ;
+  margin-bottom: 0;
   min-height: 30px;
   background-color: #162521;
   color: #fafafa
